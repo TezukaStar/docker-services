@@ -1,0 +1,16 @@
+version: '3'
+services:
+  nodered:
+    image: nodered/node-red:3.1.0
+    container_name: node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - node_red_flows:/data  
+      - node_red_logs:/logs   
+    environment:
+      - NODE_RED_LOG_DIR=/logs  
+
+volumes:
+  node_red_flows:  
+  node_red_logs:   
