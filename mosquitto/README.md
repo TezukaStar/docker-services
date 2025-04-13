@@ -40,6 +40,8 @@ log_dest file /mosquitto/log/mosquitto.log
 
 ```bash
 mosquitto_passwd -c ~/mosquitto/config/passwords.txt username
+mosquitto_passwd -c ./config/passwords.txt adcm
+
 ```
 
 หากต้องการเพิ่มผู้ใช้เพิ่มเติม ใช้คำสั่งเดิมโดยไม่ต้องใส่ `-c`:
